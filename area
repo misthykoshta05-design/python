@@ -1,0 +1,7 @@
+import math
+theta = 60          
+radius = 42
+arc_length = (theta / 360) * 2 * math.pi * radius
+sideofsquare = arc_length / 4
+areaofsquare = sideofsquare ** 2
+print("Area of the square:", areaofsquare)
