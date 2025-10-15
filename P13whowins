@@ -1,0 +1,13 @@
+N=int(input("Enter value:" ))
+used=0
+i=1
+while True:
+    if used+i>=N:
+        print("Ramesh" )
+        break
+    used+=i
+    if used+2*i>=N:
+        print("Suresh" )
+        break
+    used+=2*i
+    i+=1
