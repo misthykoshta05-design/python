@@ -1,0 +1,12 @@
+
+def find_gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+T = int(input())
+
+for _ in range(T):
+    x, y = map(int, input().split())
+    gcd_val = find_gcd(x, y)
+    lcm_val = (x * y) // gcd_val
+    print(gcd_val, lcm_val)
