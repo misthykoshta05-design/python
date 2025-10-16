@@ -1,0 +1,13 @@
+def rev(n):
+    cnt=0
+    while n>0:
+         r=n%10
+         cnt=cnt*10+r
+         n=n//10
+    return cnt    
+   
+N=int(input("Enter value" ))     
+for i in range(N):
+    a,b=map(int,input().split())
+    sum=rev(a)+rev(b)
+    print(rev(sum))
