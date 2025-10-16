@@ -1,0 +1,10 @@
+inches = float(input("Enter measurement in inches: "))
+feet = inches / 12
+yard = inches / 36
+centimeter = inches * 2.54
+meter = inches / 39.37
+print("\nMeasurement conversions for inches:")
+print("Feet:",feet)
+print("Yards:",yard)
+print("Centimetres:",centimeter)
+print("Metres:",meter)
