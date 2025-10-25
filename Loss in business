@@ -1,0 +1,8 @@
+N = int(input("Enter number of people" ))        
+X = int(input("Enter minimum skills required" ))       
+for i in range(N):
+    Y = int(input("Enter skill of ith person" ))   
+    if Y >= X:
+        print("YES")
+    else:
+        print("NO")
