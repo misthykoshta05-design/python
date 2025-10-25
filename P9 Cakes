@@ -1,0 +1,7 @@
+
+T = int(input("Enter number of cases" ))
+
+for _ in range(T):
+    N = int(input("Enter number of lemon cakes" ))
+    A = (N // 2) + 1
+    print(A)
