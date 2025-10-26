@@ -1,0 +1,6 @@
+
+N = int(input("No. of test cases:" )) 
+for _ in range(N):
+    a, b = map(int, input().split())
+    last_digit = pow(a, b, 10)  
+    print(last_digit)
