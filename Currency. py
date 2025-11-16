@@ -1,0 +1,26 @@
+amount = int(input())
+start = int(input())
+denoms = [100, 50, 20, 10, 5, 2, 1]
+idx = denoms.index(start)
+
+remaining = amount
+
+for d in denoms[idx:]:
+    match d:
+        case 100:
+            count = remaining // 100
+        case 50:
+            count = remaining // 50
+        case 20:
+            count = remaining // 20
+        case 10:
+            count = remaining // 10
+        case 5:
+            count = remaining // 5
+        case 2:
+            count = remaining // 2
+        case 1:
+            count = remaining // 1
+    
+    remaining -= count * d
+    print(f"{d} rupees note: {count}")
